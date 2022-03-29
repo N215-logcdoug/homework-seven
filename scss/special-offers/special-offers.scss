@@ -1,0 +1,102 @@
+.special-offers {
+    margin-bottom: 100px;
+    .special-offers-title {
+        max-width: $site-width;
+        margin: 0 auto;
+        margin-top: 64px;
+    
+        h1 {
+            font-weight: normal;
+            font-family: ProximaThin;
+            font-size: 30px;
+            letter-spacing: 4px;
+            margin: 0;
+            text-decoration: underline;
+            text-underline-offset: 10px;
+        }
+    }
+    
+    .offer-container {
+        max-width: $site-width;
+        margin: 0 auto;
+        margin-top: 46px;
+        margin-bottom: 14px;
+        min-height: 100px;
+    
+        .offer {
+            min-height: 100px;
+            display: flex;
+    
+            .offer-photo {
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 199px;
+                height: 287px;
+            }
+    
+            .offer-text {
+                margin-left: 20px;
+                position: relative;
+    
+                .offer-title {
+                    display: flex;
+                    //align-items: center;
+    
+                    h2 {
+                        font-weight: normal;
+                        font-family: ProximaThin;
+                        margin: 0;
+                        font-size: 30px;
+                        letter-spacing: 4px;
+                        text-decoration: underline;
+                        text-underline-offset: 9px;
+                    }
+    
+                    p {
+                        font-family: ProximaThin;
+                        font-size: 20px;
+                        margin-left: 20px;
+                        margin-top: 10px;
+                        color: $site-orange;
+                    }
+                }
+    
+                .offer-body {
+                    width: 290px;
+                    margin-top: 20px;
+                    margin-bottom: 50px;
+                    p {
+                        font-family: GillSansLight;
+                        font-size: 16px;
+                    }
+                }
+    
+                button {
+                    position: absolute;
+                    bottom: 0px;
+                    @include button();
+                }
+            }
+    
+            
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .special-offers {
+        .special-offers-title {
+            width: 75%;
+            margin: 0 auto;
+            margin-top: 64px;
+        }
+        .offer-container {
+            .offer {
+                width: 75%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,114 @@
+.contact {
+    .contact-title {
+
+        max-width: $site-width;
+        margin: 0 auto;
+        margin-top: 64px;
+        margin-bottom: 50px;
+
+
+        h1 {
+            font-family: ProximaThin;
+            font-size: 30px;
+            font-weight: normal;
+            margin: 0;
+            letter-spacing: 4px;
+        }
+
+        hr {
+            width: 159px;
+            height: 2px;
+            border-width: 0;
+            background-color:black;
+            margin-top: 11px;
+        }
+    }
+
+    .contact-container {
+        max-width: $site-width;
+        min-height: 200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+
+        .contact-location {
+            width: 400px;
+            min-height: 637px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .contact-map {
+                width: 100%;
+                height: 442px;
+                background-image: url(../images/map.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            p {
+                font-family: GillSansLight;
+                font-size: 18px;
+                color: $site-black
+            }
+        }
+
+        .contact-form {
+            width: 529px;
+            min-height: 637px;
+            display: flex;
+            flex-direction: column;
+            
+
+            input {
+                width: 100%;
+                height: 60px;
+                margin-bottom: 21px;
+                border: none;
+                background-color: #F5F5F5;
+                font-family: GillSans;
+                font-size: 16px;
+                padding: 20px;
+            }
+
+            textarea {
+                height: 199px;
+                border: none;
+                background-color: #F5F5F5;
+                font-family: GillSans;
+                font-size: 16px;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            button {
+                @include button(0);
+                width: 167px;
+                height: 60px;
+                margin: 0;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contact {
+        .contact-title {
+            width: 75%;
+        }
+        .contact-container {
+            width: 75%;
+            flex-direction: column;
+            .contact-location {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .contact-form {
+                width: 100%;
+            }
+        }
+    }
+}
